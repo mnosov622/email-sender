@@ -20,7 +20,7 @@ $mail->Password = '77ba1bf500d113';
 
 $mail->setFrom('zakaz-reton@yandex.ru');
 
-$mail->addAddress('mnosov622@gmail.com');
+$mail->addAddress($email);
 $mail->Subject = 'Zayavka s sayta autn01.ru';
 
 $mailContent = $name . ' ' . $surname;
