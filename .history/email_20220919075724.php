@@ -23,16 +23,19 @@ $mail->setFrom('zakaz-reton@yandex.ru');
 $mail->addAddress($email);
 $mail->Subject = 'Zayavka s sayta autn01.ru';
 
-$mailContent = $name . ' ' . $surname;
+$mailContent = $name . $surname;
 
 $mail->Body = $mailContent;
 
 
 if($mail->Send()) {
     echo "Email Sent...!";
+    // echo '<meta HTTP-EQUIV="REFRESH" content="0; url=thanks.html">';
+
     header('Location: thanks.html');
 
     exit;
+
 }
 
 else {

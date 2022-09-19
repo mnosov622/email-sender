@@ -30,6 +30,7 @@ $mail->Body = $mailContent;
 
 if($mail->Send()) {
     echo "Email Sent...!";
+    // echo '<meta HTTP-EQUIV="REFRESH" content="0; url=thanks.html">';
     header('Location: thanks.html');
 
     exit;
