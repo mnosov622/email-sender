@@ -11,5 +11,4 @@ document.querySelector('form').addEventListener('submit'), function(e) {
             contentType: false,
             processData: false
         });
-        window.location.href = 'thanks.html';
 }
